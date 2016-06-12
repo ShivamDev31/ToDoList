@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/note_title" />
+
+    <EditText
+        android:id="@+id/et_note_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/b_add"
+        android:layout_below="@+id/et_title"
+        android:layout_marginBottom="6dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="@string/enter_the_note"
+        android:inputType="textMultiLine"
+        android:padding="6dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_delete_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_delete" />
+
+    <Button
+        android:id="@+id/b_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="@string/add" />
+</RelativeLayout>
